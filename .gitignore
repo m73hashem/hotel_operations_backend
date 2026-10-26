@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets and environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.ruff_cache/
+htmlcov/
+
+# OS
+.DS_Store
+
+# Ignore a specific directory
+.ruff_cache/
+Files/
+logs/
+docs/

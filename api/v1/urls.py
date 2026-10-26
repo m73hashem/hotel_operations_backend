@@ -1,0 +1,40 @@
+from django.urls import include, path
+
+urlpatterns = [
+    path(
+        "cases/",
+        include("apps.requests.api.case_urls"),
+    ),
+    path(
+        "auth/",
+        include("apps.users.api.urls"),
+    ),
+    path(
+        "guests/",
+        include("apps.guests.api.urls"),
+    ),
+    path(
+        "stays/",
+        include("apps.guests.api.stay_urls"),
+    ),
+    path(
+        "rooms/",
+        include("apps.rooms.api.urls"),
+    ),
+    path(
+        "chat/",
+        include("apps.chat.api.urls"),
+    ),
+    path(
+        "requests/",
+        include("apps.requests.api.urls"),
+    ),
+    path(
+        "operations/",
+        include("apps.employees.api.urls"),
+    ),
+    path(
+        "dashboard/",
+        include("apps.dashboard.api.urls"),
+    ),
+]
